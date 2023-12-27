@@ -4,7 +4,7 @@ const cors = require('cors');
 
 const express = require('express');
 const app = express();
-const port = 3000;
+const port = 3001;
 
 const bodyParser = require('body-parser');
 
@@ -23,7 +23,7 @@ const sendEmail = async (req, res) => {
     }
 
     // Caminho para o arquivo HTML
-    const htmlPath = path.join(__dirname, './', 'email', 'bytefuture', 'index.html');
+    const htmlPath = path.join(__dirname, './', 'src', 'email-template', 'future', 'index.html');
 
     // Configuração do Nodemailer (substitua com suas próprias credenciais e configurações)
     const transporter = nodemailer.createTransport({
