@@ -13,7 +13,7 @@ const sendEmail = async (req, res) => {
     }
 
     // Caminho para o arquivo HTML
-    const htmlPath = path.join(__dirname, './', 'src', 'email-template', 'future', 'index.html');
+    const htmlPath = path.join(__dirname, '../', 'email-template', 'future', 'index.html');
 
     const transporter = nodemailer.createTransport({
       host: process.env.SMTP_HOST,
