@@ -24,5 +24,5 @@ app.use(cors(corsOptions));
 app.use(mailRoutes);
 
 app.listen(process.env.PORT, () => {
-  console.log(`Servidor Express rodando em http://localhost:${process.env.PORT}`);
+  console.log(`Servidor Express rodando}`);
 });
