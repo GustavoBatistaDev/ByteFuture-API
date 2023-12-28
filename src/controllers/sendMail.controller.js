@@ -37,6 +37,8 @@ const sendEmail = async (req, res) => {
     };
 
     await transporter.sendMail(mailOptions);
+
+    console.log('E-mail enviado com sucesso!');
     
     res.status(200).send('E-mail enviado com sucesso!');
   } catch (error) {
